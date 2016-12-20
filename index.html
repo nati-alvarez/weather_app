@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Dosis" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div id="bulletin">
+        <p>WEATHER: Fall has officially begun with the autumn equinox.</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>NEWS: Unrest in (insert place here) countinues.</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>POLITICS: The first presidential debates have begun.</p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>WEATHER: Typoons hits Taiwan, massive damages reported.</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </header>
+
+    <main>
+      <div id="video_container">
+        <video autoplay loop poster="winter.JPG">
+          <source src="snow.mp4" type="video/mp4">
+        </video>
+      </div>
+      <section>
+        <h1>See the local forecast in your area</h1>
+
+        <div id ="search">
+          <input onchange="getInput()" onclick="clearSearchbar()" id="input" required type="search" value="Enter your state and city">
+          <input  id="button" type="submit" value="Find your forecast"  onclick="getImage()">
+        </div>
+
+
+          <div id="your-weather">
+
+            <a href="#"id="close"><p>X</p></a>
+
+            <section  id="col1">
+              <h3>Five day forecast</h2>
+              <div id="content2" style="color:black;">
+              </div>
+            </section>
+
+            <section  id="col2">
+              <h2>Your Local Weather</h2>
+              <img id ='weather-icon' width="190px" height="190px" src="">
+              <div id="content1">
+              </div>
+            </section>
+
+            <section id="col3">
+              <h3>Misc</h3>
+              <div id="content3">
+              </div>
+            </section>
+
+          </div>
+
+      </section>
+    </main>
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="javascript_scroll.js" type="text/javascript"></script>
+    <script src="jQuery.js"  type="text/javascript"></script>
+  </body>
+</html>
